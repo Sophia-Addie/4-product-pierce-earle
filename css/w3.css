@@ -476,18 +476,18 @@ a {
 .w3-dropdown-hover:first-child,
 .w3-dropdown-click:hover {
     background-color: #ccc;
-    color: #000
+    color: #BA55D3
 }
 
 .w3-dropdown-hover:hover > .w3-button:first-child,
 .w3-dropdown-click:hover > .w3-button:first-child {
     background-color: #ccc;
-    color: #000
+    color: #BA55D3
 }
 
 .w3-dropdown-content {
     cursor: auto;
-    color: #000;
+    color: #BA55D3;
     background-color: #fff;
     display: none;
     position: absolute;
@@ -1430,7 +1430,7 @@ a {
 }
 
 .w3-button:hover {
-    color: #000!important;
+    color: #BA55D3!important;
     background-color: #ccc!important
 }
 
@@ -1448,7 +1448,7 @@ a {
 
 .w3-amber,
 .w3-hover-amber:hover {
-    color: #000!important;
+    color: #BA55D3!important;
     background-color: #ffc107!important
 }
 
