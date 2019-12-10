@@ -47,14 +47,34 @@ and is wrapped around the whole page content, except for the footer in this exam
 
             <!-- Image header -->
             <header class="w3-display-container w3-wide" id="home">
-                <img class="w3-image" src="img/players1.jpeg" alt="hockey" width="1600" height="1060">
+                <img class="w3-image" src="img/Screen%20Shot%202019-12-05%20at%202.02.23%20PM.png" alt="hockey" width="1600" height="1060">
                 <div class="w3-display-left w3-padding-large">
                     <h1 class="w3-text-white">NHL</h1>
                     <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>Hockey Fights Cancer</b></h1>
                     <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">Donate</button></h6>
                 </div>
             </header>
+            
+            <div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+</div>
 
+            <div id="London" class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div id="Paris" class="city" style="display:none">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="city" style="display:none">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
             <!-- Grid -->
             <div class="w3-row w3-padding w3-border">
 
@@ -64,13 +84,13 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <!-- Blog entry -->
                     <div class="w3-container w3-white w3-margin w3-padding-large">
                         <div class="w3-center">
-                            <h3>TITLE HEADING</h3>
-                            <h5>Title description, <span class="w3-opacity">May 2, 2016</span></h5>
+                            <h3>Ledgendary Puck Drops</h3>
+                            <h5> Mighty Quinn drops it for the boston bruins! <span class="w3-opacity"> 2019</span></h5>
                         </div>
 
                         <div class="w3-justify">
-                            <img src="/w3images/girl_hat.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
-                            <p><strong>More Hats!</strong> Hockey Fights Cancer brings together the hockey community to support friends and family affected by cancer. Each of the 31 NHL Clubs celebrates their own Hockey Fights Cancer Night, each November. Each player wears a special Hockey fights cancer jersey and coaches and broadcasters wear HFC ties. The organization helps raise money and support patients of the American Cancer Society, Canadian Cancer Society, and Movember Foundation.
+                            <img src="img/mightyquinn1.jpeg" alt="Mighty Quinn" style="width:100%" class="w3-padding-16">
+                            <p> Hockey Fights Cancer brings together the hockey community to support friends and family affected by cancer. Each of the 31 NHL Clubs celebrates their own Hockey Fights Cancer Night, each November. Each player wears a special Hockey fights cancer jersey and coaches and broadcasters wear HFC ties. The organization helps raise money and support patients of the American Cancer Society, Canadian Cancer Society, and Movember Foundation.
 
 </p>
                             <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
@@ -190,8 +210,8 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <div class="w3-white w3-margin">
                         <img src="/w3images/avatar_girl2.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
                         <div class="w3-container w3-black">
-                            <h4>My Name</h4>
-                            <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                            <h4>National Hockey League </h4>
+                            <p>The NHl</p>
                         </div>
                     </div>
                     <hr>
@@ -199,30 +219,30 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <!-- Posts -->
                     <div class="w3-white w3-margin">
                         <div class="w3-container w3-padding w3-black">
-                            <h4>Popular Posts</h4>
+                            <h4>Inspiring stories </h4>
                         </div>
                         <ul class="w3-ul w3-hoverable w3-white">
                             <li class="w3-padding-16">
                                 <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                                <span class="w3-large">Denim</span>
+                                <span class="w3-large">Mighty Quinn </span>
                                 <br>
                                 <span>Sed mattis nunc</span>
                             </li>
                             <li class="w3-padding-16">
                                 <img src="/w3images/bandmember.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                                <span class="w3-large">Sweaters</span>
+                                <span class="w3-large">Braden Nienaber</span>
                                 <br>
                                 <span>Praes tinci sed</span>
                             </li>
                             <li class="w3-padding-16">
                                 <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                                <span class="w3-large">Workshop</span>
+                                <span class="w3-large">Graysen Hooper</span>
                                 <br>
                                 <span>Ultricies congue</span>
                             </li>
                             <li class="w3-padding-16">
                                 <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
-                                <span class="w3-large">Trends</span>
+                                <span class="w3-large">Laila Anderson</span>
                                 <br>
                                 <span>Lorem ipsum dipsum</span>
                             </li>
@@ -299,7 +319,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                             <h4>Subscribe</h4>
                         </div>
                         <div class="w3-container w3-white">
-                            <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                            <p>Enter your e-mail below and get notified on the latest events from the NHL or donate to help those in need today </p>
                             <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
                             <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Donate Now!</button></p>
                         </div>
@@ -332,6 +352,8 @@ and is wrapped around the whole page content, except for the footer in this exam
             <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
             <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
         </footer>
+        
+        <script src="js/tabs.js"></script>
 
         <script>
             // Toggle between hiding and showing blog replies/comments
