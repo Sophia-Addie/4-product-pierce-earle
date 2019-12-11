@@ -1,4 +1,3 @@
-
 function openCity(cityName) {
   var i;
   var x = document.getElementsByClassName("city");
