@@ -25,15 +25,27 @@
     <body class="w3-light-grey">
 
         <!-- Navigation bar with social media icons -->
-        <div class="w3-bar w3-black w3-hide-small">
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
-        </div>
+        <div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+</div>
+
+            <div id="London" class="city">
+  <h2>About us </h2>
+  <p>HOCKEY FIGHTS CANCER 2019</p>
+</div>
+
+<div id="Paris" class="city" style="display:none">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="city" style="display:none">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+         
 
         <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -55,27 +67,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </div>
             </header>
             
-            <div class="w3-bar w3-black">
-  <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
-  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
-  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
-</div>
-
-            <div id="London" class="city">
-  <h2>About us </h2>
-  <p>HOCKEY FIGHTS CANCER 2019</p>
-</div>
-
-<div id="Paris" class="city" style="display:none">
-  <h2>Paris</h2>
-  <p>Paris is the capital of France.</p>
-</div>
-
-<div id="Tokyo" class="city" style="display:none">
-  <h2>Tokyo</h2>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-            <!-- Grid -->
+               <!-- Grid -->
             <div class="w3-row w3-padding w3-border">
 
                 <!-- Blog entries -->
@@ -85,16 +77,17 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <div class="w3-container w3-white w3-margin w3-padding-large">
                         <div class="w3-center">
                             <h3>Ledgendary Puck Drops</h3>
-                            <h5> Mighty Quinn drops it for the boston bruins! <span class="w3-opacity"> 2019</span></h5>
+                            <h5> Laila Anderson drops the puck for the San Jose Sharks! <span class="w3-opacity"> 2019</span></h5>
                         </div>
 
                         <div class="w3-justify">
-                            <img src="img/mightyquinn1.jpeg" alt="Mighty Quinn" style="width:100%" class="w3-padding-16">
+                            <img src="img/thepuckdrop.jpg" alt="Mighty Quinn" style="width:100%" class="w3-padding-16">
                             <p> Hockey Fights Cancer brings together the hockey community to support friends and family affected by cancer. Each of the 31 NHL Clubs celebrates their own Hockey Fights Cancer Night, each November. Each player wears a special Hockey fights cancer jersey and coaches and broadcasters wear HFC ties. The organization helps raise money and support patients of the American Cancer Society, Canadian Cancer Society, and Movember Foundation.
 
 </p>
                             <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-                            <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+                            
+                
                             <p class="w3-clear"></p>
                             <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
                                 <hr>
@@ -123,7 +116,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                             <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
                                 mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
                             <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-                            <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+                            
                             <p class="w3-clear"></p>
 
                             <!-- Example of comment field -->
@@ -243,10 +236,11 @@ and is wrapped around the whole page content, except for the footer in this exam
 </span>
                             </li>
                             <li class="w3-padding-16">
-                                <img src="/w3images/avatar_smoke.jpg" alt="Laila ANderson" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+                                <img src="img/laila-anderson-raises-cup-rally.jpg" alt="Laila ANderson" class="w3-left w3-margin-right w3-sepia" style="width:50px">
                                 <span class="w3-large">Laila Anderson</span>
                                 <br>
-                                <span>Lorem ipsum dipsum</span>
+                                <span>The St. Louis Blues are giving fans the opportunity to sign up for Be a Match registry and receive a swab sample kit to see if you are a potential bone marrow donor for Laila Anderson, a young Blue fan. 
+</span>
                             </li>
                         </ul>
                     </div>
@@ -268,41 +262,21 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <!-- Tags -->
                     <div class="w3-white w3-margin">
                         <div class="w3-container w3-padding w3-black">
-                            <h4>Tags</h4>
+                            
                         </div>
                         <div class="w3-container w3-white">
-                            <p>
-                                <span class="w3-tag w3-black w3-margin-bottom">Fashion</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
-                                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hats</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Norway</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweaters</span>
-                                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deals</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>
-                                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-                                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jeans</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trends</span>
-                            </p>
+                           
                         </div>
                     </div>
                     <hr>
 
                     <!-- Inspiration -->
-                    <div class="w3-white w3-margin">
-                        <div class="w3-container w3-padding w3-black">
-                            <h4>Inspiration</h4>
-                        </div>
-                        <div class="w3-row-padding w3-white">
-                            <div class="w3-col s6">
-                                <p><img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%"></p>
-                                <p><img src="/w3images/team1.jpg" alt="Jeans" style="width:100%"></p>
-                            </div>
-                            <div class="w3-col s6">
-                                <p><img src="/w3images/avatar_hat.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
-                                <p><img src="/w3images/team4.jpg" alt="Jeans" style="width:100%"></p>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <hr>
 
                     <div class="w3-white w3-margin">
                         <div class="w3-container w3-padding w3-black">
-                            <h4>Follow Me</h4>
+                            <h4>Follow us to stay updated!</h4>
                         </div>
                         <div class="w3-container w3-xlarge w3-padding">
                             <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -323,7 +297,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                         <div class="w3-container w3-white">
                             <p>Enter your e-mail below and get notified on the latest events from the NHL or donate to help those in need today </p>
                             <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-                            <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Donate Now!</button></p>
+                            <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-purple">Donate Now!</button></p>
                         </div>
                     </div>
 
@@ -341,8 +315,8 @@ and is wrapped around the whole page content, except for the footer in this exam
             <div class="w3-modal-content" style="padding:32px">
                 <div class="w3-container w3-white">
                     <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
-                    <h2 class="w3-wide">SUBSCRIBE</h2>
-                    <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                    <h2 class="w3-wide">Ways to help!</h2>
+                    <p>Donate, Come support at games & Shop our merchandise</p>
                     <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
                     <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
                 </div>
