@@ -25,47 +25,53 @@
     <body class="w3-light-grey">
 
         <!-- Navigation bar with social media icons -->
-        <div class="w3-bar w3-black">
-  <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
-  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
-  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
-</div>
 
-            <div id="London" class="city">
-  <h2>About us </h2>
-  <p>HOCKEY FIGHTS CANCER 2019</p>
-</div>
-
-<div id="Paris" class="city" style="display:none">
-  <h2>Paris</h2>
-  <p>Paris is the capital of France.</p>
-</div>
-
-<div id="Tokyo" class="city" style="display:none">
-  <h2>Tokyo</h2>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
          
 
         <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
         <div class="w3-content" style="max-width:1600px">
-
-            <!-- Header -->
-            <header class="w3-container w3-center w3-padding-48 w3-white">
+  <header class="w3-container w3-center w3-padding-48 w3-white">
                 <h1 class="w3-xxxlarge"><b>HOCKEY FIGHTS CANCER 2019 </b></h1>
                 <h6> SUPPORT FAMILIES AND FIGHTERS IN NEED </h6>
             </header>
 
+            <!-- slideshow-->
+            
+<img class="mySlides" src="img/hockeycancerpic.jpg">
+<img class="mySlides" src="img/hockeycancerbanner.jpg">
+<img class="mySlides" src="img_mountains.jpg">
+<img class="mySlides" src="img_forest.jpg">
+
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+            
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">ABOUT</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">SHOP</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">I FIGHT FOR</button>
+</div>
+
+            <div id="London" class="city">
+  <h2>About us </h2>
+  <p> In Hockey Fights Cancer brings together the hockey community to support friends and family affected by cancer. Each of the 31 NHL Clubs celebrates their own Hockey Fights Cancer Night, each November. Each player wears a special Hockey fights cancer jersey and coaches and broadcasters wear HFC ties. The organization helps raise money and support patients of the American Cancer Society, Canadian Cancer Society, and Movember Foundation.</p>
+</div>
+
+<div id="Paris" class="city" style="display:none">
+  <h2>Shop for a cause!</h2>
+  <p>Purchase our merchandise to show support for your teams, cancer fighters, families, and survivors alike!</p>
+<img class="w3-image" src="img/halfzip2.jpg" alt="hockey" width="30%" height="20%">
+</div>
+
+<div id="Tokyo" class="city" style="display:none">
+  <h2>Help support a friend or family member that is fight cancer! 
+</h2>
+  <p>Here’s how to help: Print an ‘I fight for’ sign and customize it with pictures and the hashtag #HockeyFightsCancer. Share your signs on Facebook or Twitter to be featured on our page!
+</p>
+    <img class="w3-image" src="img/ifightfor.jpg" alt="hockey" width="30%" height="20%">
+</div>
             <!-- Image header -->
-            <header class="w3-display-container w3-wide" id="home">
-                <img class="w3-image" src="img/Screen%20Shot%202019-12-05%20at%202.02.23%20PM.png" alt="hockey" width="1600" height="1060">
-                <div class="w3-display-left w3-padding-large">
-                    <h1 class="w3-text-white">NHL</h1>
-                    <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>Hockey Fights Cancer</b></h1>
-                    <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">Donate</button></h6>
-                </div>
-            </header>
+             
             
                <!-- Grid -->
             <div class="w3-row w3-padding w3-border">
@@ -82,7 +88,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
                         <div class="w3-justify">
                             <img src="img/thepuckdrop.jpg" alt="Mighty Quinn" style="width:100%" class="w3-padding-16">
-                            <p> Hockey Fights Cancer brings together the hockey community to support friends and family affected by cancer. Each of the 31 NHL Clubs celebrates their own Hockey Fights Cancer Night, each November. Each player wears a special Hockey fights cancer jersey and coaches and broadcasters wear HFC ties. The organization helps raise money and support patients of the American Cancer Society, Canadian Cancer Society, and Movember Foundation.
+                            <p> Cancer fighters of all ages have had opportunities to spend time with their favorite NHL teams. Mighty Quinn and Lila Anderson among many others have gone onto the ice to drop the puck for the teams they route for whole heartedly. 
 
 </p>
                             <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
@@ -229,14 +235,14 @@ and is wrapped around the whole page content, except for the footer in this exam
                                 <span>An eight-year-old boy with Langerhans cell histiocytosis, a disease similar to cancer, spent the weekend In Washington D.C. He got the opportunity to skate with the Capitals.</span>
                             </li>
                             <li class="w3-padding-16">
-                                <img src="/img/amazing%20gray%20.jpg" alt="Grace anderson" class="w3-left w3-margin-right" style="width:80px">
+                                <img src="/img/amazing%20gray%20.jpg" alt="Grace anderson" class="w3-left w3-margin-right" style="width:100px">
                                 <span class="w3-large">Graysen Hooper</span>
                                 <br>
                                 <span>A 2-year-old who has been fighting leukemia and persevering through chemotherapy for over a year had the opportunity to drop the ceremonial puck with her parents for the Vancouver Canucks and San Jose Sharks. 
 </span>
                             </li>
                             <li class="w3-padding-16">
-                                <img src="img/laila-anderson-raises-cup-rally.jpg" alt="Laila ANderson" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+                                <img src="img/laila-anderson-raises-cup-rally.jpg" alt="Laila ANderson" class="w3-left w3-margin-right w3-sepia" style="width:100px">
                                 <span class="w3-large">Laila Anderson</span>
                                 <br>
                                 <span>The St. Louis Blues are giving fans the opportunity to sign up for Be a Match registry and receive a swab sample kit to see if you are a potential bone marrow donor for Laila Anderson, a young Blue fan. 
@@ -330,6 +336,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         </footer>
         
         <script src="js/tabs.js"></script>
+        <script src="js/slideshow.js"></script>
 
         <script>
             // Toggle between hiding and showing blog replies/comments

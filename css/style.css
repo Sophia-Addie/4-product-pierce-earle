@@ -17,3 +17,9 @@ h1, h6, h3 {
     
     Color: #a87dcb;
 }
+
+.city {
+    padding: 20px; 
+}
+
+.mySlides {display:none;}
