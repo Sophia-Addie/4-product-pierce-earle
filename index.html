@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
-    
+
         <!-- test comment for git hub -->
-    
-        
+
+
         <title>W3.CSS Template</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/w3.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/w3.css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-        body {font-family: "Open Sans"}
-    </style>
-    
-    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+            body {font-family: "Open Sans"}
+        </style>
+
+
     </head>
-    
+
     <body class="w3-light-grey">
 
         <!-- Navigation bar with social media icons -->
 
-         
+
 
         <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
         <div class="w3-content" style="max-width:1600px">
-  <header class="w3-container w3-center w3-padding-48 w3-white">
+            <header class="w3-container w3-center w3-padding-48 w3-white">
                 <h1 class="w3-xxxlarge"><b>HOCKEY FIGHTS CANCER 2019 </b></h1>
                 <h6> SUPPORT FAMILIES AND FIGHTERS IN NEED </h6>
+                <!-- slideshow-->
+
+                <img class="mySlides w3-image" src="img/night.jpg">
+                <img class="mySlides w3-image" src="img/hockeycancerbanner3.jpg">
+                <img class="mySlides w3-image" src="img/signholding2.jpg">
+
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
             </header>
 
-            <!-- slideshow-->
-            
-<img class="mySlides" src="img/hockeycancerpic.jpg">
-<img class="mySlides" src="img/hockeycancerbanner.jpg">
-<img class="mySlides" src="img_mountains.jpg">
-<img class="mySlides" src="img_forest.jpg">
 
-<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-            
-<div class="w3-bar w3-black">
-  <button class="w3-bar-item w3-button" onclick="openCity('London')">ABOUT</button>
-  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">SHOP</button>
-  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">I FIGHT FOR</button>
-</div>
+            <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button" onclick="openCity('London')">ABOUT</button>
+                <button class="w3-bar-item w3-button" onclick="openCity('Paris')">SHOP</button>
+                <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">I FIGHT FOR</button>
+            </div>
 
             <div id="London" class="city">
-  <h2>About us </h2>
-  <p> In Hockey Fights Cancer brings together the hockey community to support friends and family affected by cancer. Each of the 31 NHL Clubs celebrates their own Hockey Fights Cancer Night, each November. Each player wears a special Hockey fights cancer jersey and coaches and broadcasters wear HFC ties. The organization helps raise money and support patients of the American Cancer Society, Canadian Cancer Society, and Movember Foundation.</p>
-</div>
+                <h2>About Us </h2>
+                <p> In Hockey Fights Cancer brings together the hockey community to support friends and family affected by cancer. Each of the 31 NHL Clubs celebrates their own Hockey Fights Cancer Night, each November. Each player wears a special Hockey fights cancer jersey and coaches and broadcasters wear HFC ties. The organization helps raise money and support patients of the American Cancer Society, Canadian Cancer Society, and Movember Foundation.</p>
+                <img src="img/Screen%20Shot%202019-12-05%20at%202.02.23%20PM.png" alt="players">
+            </div>
 
-<div id="Paris" class="city" style="display:none">
-  <h2>Shop for a cause!</h2>
-  <p>Purchase our merchandise to show support for your teams, cancer fighters, families, and survivors alike!</p>
-<img class="w3-image" src="img/halfzip2.jpg" alt="hockey" width="30%" height="20%">
-</div>
+            <div id="Paris" class="city" style="display:none">
+                <h2>Shop for a cause!</h2>
+                <p>Purchase our merchandise to show support for your teams, cancer fighters, families, and survivors alike!</p>
+                <img class="w3-image" src="img/halfzip2.jpg" alt="hockey" width="30%" height="20%">
+            </div>
 
-<div id="Tokyo" class="city" style="display:none">
-  <h2>Help support a friend or family member that is fight cancer! 
-</h2>
-  <p>Here’s how to help: Print an ‘I fight for’ sign and customize it with pictures and the hashtag #HockeyFightsCancer. Share your signs on Facebook or Twitter to be featured on our page!
-</p>
-    <img class="w3-image" src="img/ifightfor.jpg" alt="hockey" width="30%" height="20%">
-</div>
+            <div id="Tokyo" class="city" style="display:none">
+                <h2>Help support a friend or family member that is fight cancer! 
+                </h2>
+                <p>Here’s how to help: Print an ‘I fight for’ sign and customize it with pictures and the hashtag #HockeyFightsCancer. Share your signs on Facebook or Twitter to be featured on our page!
+                </p>
+                <img class="w3-image" src="img/ifightfor.jpg" alt="hockey" width="30%" height="20%">
+            </div>
             <!-- Image header -->
-             
-            
-               <!-- Grid -->
+
+
+            <!-- Grid -->
             <div class="w3-row w3-padding w3-border">
 
                 <!-- Blog entries -->
@@ -90,10 +91,10 @@ and is wrapped around the whole page content, except for the footer in this exam
                             <img src="img/thepuckdrop.jpg" alt="Mighty Quinn" style="width:100%" class="w3-padding-16">
                             <p> Cancer fighters of all ages have had opportunities to spend time with their favorite NHL teams. Mighty Quinn and Lila Anderson among many others have gone onto the ice to drop the puck for the teams they route for whole heartedly. 
 
-</p>
+                            </p>
                             <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-                            
-                
+
+
                             <p class="w3-clear"></p>
                             <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
                                 <hr>
@@ -112,17 +113,16 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <!-- Blog entry -->
                     <div class="w3-container w3-white w3-margin w3-padding-large">
                         <div class="w3-center">
-                            <h3>TITLE HEADING</h3>
-                            <h5>Title description, <span class="w3-opacity">April 23, 2016</span></h5>
+                            <h3>Support your Team!</h3>
                         </div>
 
                         <div class="w3-justify">
-                            <img src="/w3images/man_hat.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
-                            <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
-                            <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
-                                mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                            <img src="img/penguin2.webp" alt="" style="width:100%" class="w3-padding-16">
+                            <p><strong></strong>  </p>
+                            <p>Show your support for any of the 31 National Hockey League teams shop our merchandise or wear something you already own. Whether it be the <a href="https://www.nhl.com/bruins"> Boston Bruins</a>, the LA kings or anything in between help cancer fighters just by routing for a team near or far from you. You can also support your favorite players and vote on them as the season continues!
+                            </p>
                             <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-                            
+
                             <p class="w3-clear"></p>
 
                             <!-- Example of comment field -->
@@ -153,18 +153,15 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <!-- Blog entry -->
                     <div class="w3-container w3-white w3-margin w3-padding-large">
                         <div class="w3-center">
-                            <h3>TITLE HEADING</h3>
-                            <h5>Title description, <span class="w3-opacity">April 7, 2016</span></h5>
+                            <h3>Hockey near you!</h3>
                         </div>
 
                         <div class="w3-justify">
-                            <img src="/w3images/runway.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
-                            <p><strong>Dont miss!</strong> The runway in New York City this weekend is gonna be legendary!</p>
-                            <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
-                                mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                            <img src="img/kids.jpg" alt="" style="width:100%" class="w3-padding-16">
+                            <p><strong></strong> If you can organize a Hockey fights fundraiser in your own hometown that would be amazing! Gather your friends, families and teammates and come up with ideas to contribute. Have a bake sale, 50/50 raffle, auction, or other type of activity to raise money for this great cause. Keep in mind the Hockey Fights Cancer color scheme and use it to decorate your event. Thanks!
+                            </p>
                             <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-                            <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
-                            <p class="w3-clear"></p>
+
 
                             <!-- Example of comment field -->
                             <div id="demo3" style="display:none">
@@ -207,10 +204,10 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <div class="w3-col l4">
                     <!-- About Card -->
                     <div class="w3-white w3-margin">
-                        <img src="/w3images/avatar_girl2.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
+                        <img src="img/logo.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
                         <div class="w3-container w3-black">
                             <h4>National Hockey League </h4>
-                            <p>The NHl</p>
+                            <p>The NHL</p>
                         </div>
                     </div>
                     <hr>
@@ -218,7 +215,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <!-- Posts -->
                     <div class="w3-white w3-margin">
                         <div class="w3-container w3-padding w3-black">
-                            <h4>Inspiring stories </h4>
+                            <h4>Inspiring Stories </h4>
                         </div>
                         <ul class="w3-ul w3-hoverable w3-white">
                             <li class="w3-padding-16">
@@ -226,27 +223,27 @@ and is wrapped around the whole page content, except for the footer in this exam
                                 <span class="w3-large">Mighty Quinn </span>
                                 <br>
                                 <span>A 3-year-old bruins fan, being treated for chemotherapy for a brain tumor, was able to walk on the ice at TD garden dropping the ceremonial puck on Hockey Fights Cancer Night.
- </span>
+                                </span>
                             </li>
                             <li class="w3-padding-16">
                                 <img src="/img/Braden%20Nienaber.jpg" alt="Braden Nienber" class="w3-left w3-margin-right" style="width:100px">
                                 <span class="w3-large">Braden Nienaber</span>
                                 <br>
-                                <span>An eight-year-old boy with Langerhans cell histiocytosis, a disease similar to cancer, spent the weekend In Washington D.C. He got the opportunity to skate with the Capitals.</span>
+                                <span>An eight-year-old boy with Langerhans cell <a href="https://www.histio.org/page.aspx?pid=378#.Xf0bYZO6POQ">histiocytosis</a>, a disease similar to cancer, spent the weekend In Washington D.C. He got the opportunity to skate with the Capitals.</span>
                             </li>
                             <li class="w3-padding-16">
                                 <img src="/img/amazing%20gray%20.jpg" alt="Grace anderson" class="w3-left w3-margin-right" style="width:100px">
                                 <span class="w3-large">Graysen Hooper</span>
                                 <br>
-                                <span>A 2-year-old who has been fighting leukemia and persevering through chemotherapy for over a year had the opportunity to drop the ceremonial puck with her parents for the Vancouver Canucks and San Jose Sharks. 
-</span>
+                                <span>A 2-year-old who has been fighting leukemia and persevering through chemotherapy for over a year had the opportunity to drop the ceremonial puck with her parents for the<a href="https://www.nhl.com/canucks"> Vancouver Canucks</a> and San Jose Sharks. 
+                                </span>
                             </li>
                             <li class="w3-padding-16">
                                 <img src="img/laila-anderson-raises-cup-rally.jpg" alt="Laila ANderson" class="w3-left w3-margin-right w3-sepia" style="width:100px">
                                 <span class="w3-large">Laila Anderson</span>
                                 <br>
                                 <span>The St. Louis Blues are giving fans the opportunity to sign up for Be a Match registry and receive a swab sample kit to see if you are a potential bone marrow donor for Laila Anderson, a young Blue fan. 
-</span>
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -255,11 +252,13 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <!-- Advertising -->
                     <div class="w3-white w3-margin">
                         <div class="w3-container w3-padding w3-black">
-                            <h4>Advertise</h4>
+
+                            <h4>Family Fun!</h4>
                         </div>
                         <div class="w3-container w3-white">
-                            <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
-                                <span class="w3-display-middle">Your AD Here</span>
+                            <div class="w3-container w3-display-container w3-light-grey w3-section " style="height:200px" img src="img/hello.jpg">
+                                <span class="w3-display-middle"></span>
+
                             </div>
                         </div>
                     </div>
@@ -268,16 +267,16 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <!-- Tags -->
                     <div class="w3-white w3-margin">
                         <div class="w3-container w3-padding w3-black">
-                            
+
                         </div>
                         <div class="w3-container w3-white">
-                           
+
                         </div>
                     </div>
                     <hr>
 
                     <!-- Inspiration -->
-                    
+
                     <hr>
 
                     <div class="w3-white w3-margin">
@@ -332,9 +331,8 @@ and is wrapped around the whole page content, except for the footer in this exam
         <!-- Footer -->
         <footer class="w3-container w3-dark-grey" style="padding:32px">
             <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
         </footer>
-        
+
         <script src="js/tabs.js"></script>
         <script src="js/slideshow.js"></script>
 
